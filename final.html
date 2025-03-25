@@ -1,0 +1,166 @@
+<html>
+<head>
+    <title>Final Message for Upendar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #138173, #50d1c9);
+            color: white;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 4em;
+            color: #FDE68A;
+            font-weight: 600;
+            margin-bottom: 20px;
+           
+
+            animation: slideIn 1s ease-out, celebration 2s infinite;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8em;
+            margin-top: 20px;
+            color: #3f0348;
+            max-width: 700px;
+            animation: fadeIn 1.5s ease-in;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #FDE68A;
+            color: #6D28D9;
+            text-decoration: none;
+            font-size: 1.5em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #FBBF24;
+        }
+        .confetti {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+            animation: confetti 3s infinite;
+        }
+
+        .confetti div {
+            position: absolute;
+            background-color: #F59E0B;
+            width: 10px;
+            height: 10px;
+            animation: fall 3s infinite linear;
+        }
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes celebration {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes confetti {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-100vh) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.1em;
+                max-width: 90%;
+            }
+
+            img {
+                max-width: 350px;
+            }
+
+            .button {
+                font-size: 1em;
+                padding: 12px 24px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+                max-width: 90%;
+            }
+
+            img {
+                max-width: 300px;
+            }
+
+            .button {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="confetti">
+        <div style="top: 10%; left: 10%; animation-delay: 0s;"></div>
+        <div style="top: 20%; left: 30%; animation-delay: 0.5s;"></div>
+        <div style="top: 50%; left: 50%; animation-delay: 1s;"></div>
+        <div style="top: 70%; left: 80%; animation-delay: 1.5s;"></div>
+        <div style="top: 40%; left: 60%; animation-delay: 2s;"></div>
+    </div>
+    <div>
+        <h1>To Upendar – Great Support</h1>
+        <p>
+            Happy Birthday to the amazing, supportive legend! You’re like Dhoni—calm, collected, and always asking for my pictures (but still haven't gotten any, huh?). Hope your day is as reserved as you are, but with a bit more cake and less picture requests! Have an awesome one!Each letter of your name represents something incredible about you. May this year bring you as much happiness and love as you give to others. Happy Birthday, Upendar!</p>
+        <a href="#" class="button">Celebrate Your Special Day!</a>
+    </div>
+</body>
+</html>
